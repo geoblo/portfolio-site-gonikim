@@ -36,7 +36,7 @@ a {
   animation-name: flash;
   animation-duration: 0.5s;
   /* animation-timing-function: cubic-bezier(.43,.19,.02,1); */
-  animation-delay: 3s;
+  animation-iteration-count: 2;
 }
 
 /* HEADER */
@@ -104,6 +104,9 @@ header nav ul li a:hover::after {
   font-size: 70px;
   display: flex;
   align-items: center;
+}
+.visual > .inner .purple {
+  color: #9b30ff;
 }
 
 
