@@ -39,3 +39,21 @@ const swiper = new Swiper('.project .swiper', {
   },
 });
 
+// 모달창 띄우기
+const imageModal = document.querySelector('#imageModal');
+const imageModalBtnList = document.querySelectorAll('.btn-modal-image');
+const imageCloseBtn = document.querySelector('#imageModal .btn-close');
+const imageEl = document.querySelector('#imageModal img');
+// console.log(imageModalBtnList);
+
+// Quiz: 이미지 버튼을 누르면 모달창이 뜨고 닫기 버튼을 누르면 닫히도록 만들기
+imageModalBtnList.forEach(function (imageModalBtn) {
+  imageModalBtn.addEventListener('click', function () {
+    imageEl.src = imageModalBtn.dataset.imageSrc;
+    imageModal.style.display = 'flex';
+  });
+});
+imageCloseBtn.addEventListener('click', function () {
+  imageModal.style.display = 'none';
+});
+

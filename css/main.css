@@ -346,6 +346,11 @@ header nav ul li a:hover::after {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 99;
+
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: none; /* 처음엔 숨김 상태 */
 }
 #imageModal .modal-content {
   background-color: #fff;
