@@ -57,6 +57,38 @@ img {
   display: block;
 }
 
+.btn {
+  display: block;
+  width: 120px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--purple {
+  color: #9b30ff;
+  border-color: #9b30ff;
+}
+.btn.btn--purple:hover {
+  color: #fff;
+  background-color: #9b30ff;
+}
+.btn.btn--brown {
+  color: #592b18;
+  border-color: #592b18;
+}
+.btn.btn--brown:hover {
+  color: #fff;
+  background-color: #592b18;
+}
+
 .animate-flash {
   animation-name: flash;
   animation-duration: 0.5s;
