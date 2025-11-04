@@ -17,4 +17,25 @@ spyEls.forEach(function (spyEl) {
   .addTo(controller); // 컨트롤러에 장면을 할당(필수!)
 });
 
+// Swiper 사용
+const swiper = new Swiper('.project .swiper', {
+  // 슬라이드 옵션 지정
+  direction: 'horizontal', // 수평 슬라이드(기본값)
+  loop: true, // 반복 재생 여부, 1 -> 2 -> 3 -> 다시 1
+  // autoplay: { // 자동 재생 여부
+  //   delay: 5000 // 5초마다 슬라이드 바뀜(기본값: 3000)
+  // },
+
+  // 페이지네이션 옵션
+  pagination: {
+    el: '.project .swiper-pagination',
+    clickable: true // 사용자의 페이지네이션 요소 제어 가능 여부
+  },
+
+  // 이전/다음 슬라이드 버튼 옵션
+  navigation: {
+    nextEl: '.project .swiper-button-next',
+    prevEl: '.project .swiper-button-prev',
+  },
+});
 
