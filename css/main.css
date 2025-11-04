@@ -5,7 +5,7 @@
 
 body {
   /* 글자 관련 기본(공통) 스타일 추가 */
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Open Sans", "Noto Sans KR", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
@@ -16,9 +16,9 @@ body {
 }
 
 /* 영문에만 적용할 폰트 */
-.font-en {
+/* .font-en {
   font-family: "Open Sans", sans-serif;
-}
+} */
 
 a {
   /* 밑줄 제거 */
