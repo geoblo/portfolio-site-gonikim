@@ -109,6 +109,30 @@ header nav ul li a:hover::after {
   color: #9b30ff;
 }
 
+/* ABOUT */
+.about {
+  padding: 150px 0;
+}
+.about .about__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.about .about__wrapper .about__img {
+  width: 40%;
+}
+.about .about__wrapper .about__img img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.1);
+}
+.about .about__wrapper .about__text {
+  width: 40%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 
 
 /* 애니메이션 정의는 맨 마지막에 */
