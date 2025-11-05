@@ -79,3 +79,18 @@ imageModal.addEventListener('click', function (e) {
 console.log(new Date().getFullYear());
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
+
+// 페이지 최상단으로 이동
+const toTopEl = document.querySelector('#toTop');
+
+// 페이지에 스크롤 이벤트 감지를 추가!
+// 브라우저는 문서 전체의 스크롤을 window 기준으로 처리
+// window: 브라우저 창 객체
+window.addEventListener('scroll', function () {
+  // console.log(window.scrollY); // y축 스크롤 위치
+
+  // Quiz: 페이지 스크롤 위치가
+  // 500px을 넘으면 요소를 보이고,
+  // 500px을 넘지 않으면 요소 숨기기!
+  
+});
