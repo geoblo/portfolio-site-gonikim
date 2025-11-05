@@ -468,7 +468,6 @@ footer .copyright {
   line-height: 42px;
 }
 
-
 /* 애니메이션 정의는 맨 마지막에 */
 @keyframes flash {
   0%, 50%, 100% {

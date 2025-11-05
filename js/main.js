@@ -82,6 +82,7 @@ thisYear.textContent = new Date().getFullYear();
 
 // 페이지 최상단으로 이동
 const toTopEl = document.querySelector('#toTop');
+const visualSpanEls = document.querySelectorAll('.visual h1 span');
 
 // 페이지에 스크롤 이벤트 감지를 추가!
 // 브라우저는 문서 전체의 스크롤을 window 기준으로 처리
@@ -92,5 +93,19 @@ window.addEventListener('scroll', function () {
   // Quiz: 페이지 스크롤 위치가
   // 500px을 넘으면 요소를 보이고,
   // 500px을 넘지 않으면 요소 숨기기!
-  
+  if (window.scrollY > 500) {
+    toTopEl.style.opacity = '1';
+    toTopEl.style.transform = 'translateX(0)';
+
+    visualSpanEls.forEach(function (spanEl) {
+      spanEl.classList.remove('animate-flash');
+    });
+  } else {
+    toTopEl.style.opacity = '0';
+    toTopEl.style.transform = 'translateX(100px)';
+
+    visualSpanEls.forEach(function (spanEl) {
+      spanEl.classList.add('animate-flash');
+    });
+  }
 });
