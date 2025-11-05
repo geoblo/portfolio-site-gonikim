@@ -57,3 +57,19 @@ imageCloseBtn.addEventListener('click', function () {
   imageModal.style.display = 'none';
 });
 
+// ESC 키로 닫기
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') { // e.key: 입력된 문자 자체
+    imageModal.style.display = 'none';
+  }
+});
+
+// 모달 바깥 영역 클릭 시 닫기
+imageModal.addEventListener('click', function (e) {
+  console.log(e.target); // 현재 이벤트가 발생한 대상(사용자가 실제로 클릭한 가장 안쪽 요소)
+  console.log(e.currentTarget); // 이벤트가 바인딩된 요소(여기선 imageModal), this와 동일
+  
+  if (e.target === e.currentTarget) { // 이벤트 리스너가 붙은 요소 그 자체를 클릭한 경우만 실행
+    imageModal.style.display = 'none';
+  }
+});
