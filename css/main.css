@@ -152,6 +152,15 @@ header nav ul li a::after {
 header nav ul li a:hover::after {
   width: 100%; /* 호버 시 밑줄이 완전히 나타나도록 100%로 설정 */
 }
+header .btn-hamburger {
+  display: none;
+}
+header .btn-hamburger .material-symbols-outlined {
+  font-size: 40px;
+  /* 수직 정렬 맞추기 */
+  display: block;
+  /* line-height: 60px; */
+}
 
 /* VISUAL */
 .visual {
@@ -498,7 +507,52 @@ footer .copyright {
   1200px / 992px 중 어디부터 태블릿 사이즈로 볼지
   768px / 576px 중 어디부터 모바일 사이즈로 볼지는 선택 사항
 */
+/* 장치가 화면이고 최대 너비가 767px 일 때(=> 767px 이하에서) */
+@media screen and (max-width: 767px) {
+  /* 모바일에서는 화면의 80%만 차지하도록 */
+  .inner {
+    width: 80%;
+  }
 
+  .title {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+  .title::after {
+    width: 60px;
+  }
+
+  header .btn-hamburger {
+    display: block;
+  }
+  header nav {
+    background-color: #fff8e8;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  header nav ul {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  header nav ul li {
+    padding: 10px 80px;
+    font-size: 30px;
+  }
+  header nav ul li a {
+    transition: 0.5s;
+  }
+  header nav ul li a:hover {
+    letter-spacing: 10px;
+  }
+
+
+
+
+
+}
 
 
 
