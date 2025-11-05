@@ -109,3 +109,17 @@ window.addEventListener('scroll', function () {
     });
   }
 });
+
+// 모바일용 메뉴
+const hamburgerBtn = document.querySelector('.btn-hamburger');
+const navEl = document.querySelector('header nav');
+
+hamburgerBtn.addEventListener('click', function () {
+  // if (navEl.classList.contains('active')) {
+  //   navEl.classList.remove('active');
+  // } else {
+  //   navEl.classList.add('active');
+  // }
+
+  navEl.classList.toggle('active');
+});

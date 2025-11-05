@@ -531,6 +531,11 @@ footer .copyright {
     top: 60px;
     left: 0;
     width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  header nav.active {
     height: 100%;
   }
   header nav ul {
@@ -548,10 +553,60 @@ footer .copyright {
     letter-spacing: 10px;
   }
 
+  .visual > .inner {
+    font-size: 30px;
+  }
+  .visual > .inner .mobile-lf {
+    display: inline !important;
+  }
 
+  .about {
+    padding: 100px 0;
+  }
+  .about .about__wrapper {
+    flex-direction: column;
+  }
+  .about .about__wrapper .about__img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about .about__wrapper .about__text {
+    width: 100%;
+    text-align: center;
+  }
 
+  .skill {
+    padding: 100px 0;
+  }
 
+  .project {
+    padding: 100px 0;
+  }
+  .project .port {
+    flex-direction: column;
+    margin: 40px 0;
+  }
+  .project .port .port__img, 
+  .project .port .port__text {
+    width: 100%;
+  }
+  .project .port .port__text {
+    padding: 20px 0 0;
+  }
+  .project .port .btn-group {
+    margin-top: 20px;
+  }
 
+  .contact {
+    padding: 100px 0;
+  }
+
+  #imageModal .modal-content {
+    width: 80%;
+  }
+  #imageModal .modal-body img {
+    width: 100%;
+  }
 }
 
 
