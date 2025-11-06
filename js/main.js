@@ -113,6 +113,7 @@ window.addEventListener('scroll', function () {
 // 모바일용 메뉴
 const hamburgerBtn = document.querySelector('.btn-hamburger');
 const navEl = document.querySelector('header nav');
+const menuItems = document.querySelectorAll('header nav ul li a');
 
 hamburgerBtn.addEventListener('click', function () {
   // if (navEl.classList.contains('active')) {
@@ -123,3 +124,10 @@ hamburgerBtn.addEventListener('click', function () {
 
   navEl.classList.toggle('active');
 });
+
+menuItems.forEach(function (menuItem) {
+  menuItem.addEventListener('click', function () {
+    navEl.classList.remove('active');
+  });
+});
+
